@@ -1,7 +1,6 @@
-function NavBar(navBar){
-    return<div>
-      <button onClick={navBar.prevPoke}>Précedent</button>
-      <button onClick={navBar.nextPoke}>Suivant</button>
+function NavBar(props) {
+    return <div>
+        <button onClick={props.setPoke}>{props.name}</button>
     </div>
 
 }
